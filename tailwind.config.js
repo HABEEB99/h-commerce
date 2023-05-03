@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: "jit",
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -12,7 +14,7 @@ module.exports = {
         light: "#FFFFFF",
         dark: "#1D1E2C",
         btn: "#9C528B",
-        icon: "#D7CDCC",
+        icon: "#BBB193",
         modal: "#59656F",
       },
       animation: {
@@ -25,11 +27,11 @@ module.exports = {
         },
       },
     },
-    screens: {
-      xs: "480px",
-      sm: "768px",
-      md: "1060px",
-    },
+    // screens: {
+    //   xs: "480px",
+    //   sm: "768px",
+    //   md: "1060px",
+    // },
   },
   plugins: [require("tailwind-scrollbar"), require("tailwind-scrollbar-hide")],
 };
